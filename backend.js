@@ -3,7 +3,9 @@ const mongoose = require('mongoose');  
 
 mongoose.connect('mongodb://localhost/todo-app', { useNewUrlParser: true, useUnifiedTopology: true });
 const mongoose = require('mongoose');
-
+mongoose.connection.on("connected",function(){
+    console.log("Connected to database")
+})
 const taskSchema = new mongoose.Schema({
     task: String,
     isCompleted: Boolean,
