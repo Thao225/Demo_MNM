@@ -15,7 +15,7 @@ function renderTasks() {
     taskList.innerHTML = '';
     tasks.forEach(task => {
         const li = document.createElement('li');
-        li.textContent = task.text;   
+        li.textContent = task.text;   
 
         // Thêm các nút sửa, xóa, đánh dấu hoàn thành vào đây
         taskList.appendChild(li);
@@ -28,7 +28,7 @@ function renderTasks() {
         const li = document.createElement('li');
         li.classList.add('task');
         li.innerHTML = `
-            <span class="task-text">${task.text}</span>   
+            <span class="task-text">${task.text}</span>   
 
             <button class="delete" data-index="${index}">Xóa</button>
             <input type="checkbox" class="complete" ${task.completed ? 'checked' : ''}>
@@ -40,7 +40,7 @@ function renderTasks() {
     const deleteButtons = document.querySelectorAll('.delete');
     deleteButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const index = button.dataset.index;   
+            const index = button.dataset.index;   
 
             tasks.splice(index, 1);
             renderTasks();

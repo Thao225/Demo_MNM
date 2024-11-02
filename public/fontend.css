@@ -1,0 +1,45 @@
+
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #form {
+    margin-bottom: 20px;
+  }
+  
+  #taskList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f0f0;
+    }
+    
+    .task:hover {
+      background-color: #e0e0e0;
+      cursor: pointer;
+    }

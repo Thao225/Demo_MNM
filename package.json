@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "demo_mnm",
   "version": "1.0.0",
   "main": "fontend.js",
