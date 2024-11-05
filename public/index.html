@@ -18,23 +18,7 @@
         <button class="delete">Xóa</button>
         <input type="checkbox" class="complete">
       </li>
-    <script>
-        fetch('https://reqres.in/api/users',{
-
-        method:'POST',
-        headers:{
-            'content-type': 'application/json'
-        },
-        body: JSON.stringify({
-    
-            name:'user 6'
-        })
-    }).then(res => {
-        return res.json()
-    })
-    .then(data => console.log(data))
-        .catch(error => console.log('ERROR'))
-    </script>
+    <!-- <script src="fontend.js"></script> -->
     <!-- <script src="backend.js"></script> -->
 </body>
 </html>
